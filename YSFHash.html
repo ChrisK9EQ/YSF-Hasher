@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<style>
+input[type=submit], input[type=reset]{
+  background-color: blue;
+  border: 2px solid blue;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  left: 100px;
+}
+input[type=text] {
+	  background-color: yellow;
+	  border: 2px solid black;
+	  border-radius: 4px;
+	  color: black;
+	  padding: 8px 16px;
+	  text-decoration: none;
+	  margin: 4px 2px;
+}
+</style>
+<title>YSF Hasher by K9EQ</title>
+</head>
+<body>
+ <center style="font-family:veranda;color:blue;font-size:150%">YSF Reflector Namer<br></center>
+ <center style="font-family:veranda;color:blue;font-size:100%">Determines YSF Reflector Names matching a reflector number<br></center>
+ <p>
+</center>
+
+<form action="/cgi-bin/YSFhash.py" method="post">
+  YSF Reflector Name (max 16 characters): <input type="text" maxlength="16" name="YSFReflectorName" /><p>
+  Desired YSF Reflector Number (5 digits): <input type="text" maxlength="5" name="WiresxRoomNumber" /><p>
+  It may take several seconds to calculate a response. Please wait for your browser to update<p>
+  <input type="submit" value="Submit" />
+  <input type="reset" value="Clear Input" />
+</form>
+<br>
+ <a href="http://www.HamOperator.com">Courtesy HamOperator.com</a>
+</body>
+</html>
+
